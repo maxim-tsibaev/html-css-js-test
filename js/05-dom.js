@@ -11,7 +11,9 @@ imgEl.width = 320;
 
 const divToInsert = document.querySelector('.dom-js5');
 
-divToInsert.append(title, imgEl);
+title.append(imgEl);
+
+divToInsert.append(title);
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -29,7 +31,7 @@ const createColorPickerOptions = options => {
     const buttonEl = document.createElement('button');
     buttonEl.type = 'button';
     buttonEl.classList.add('color-picker__option');
-    buttonEl.textContent = 'option.label';
+    buttonEl.textContent = option.label;
     buttonEl.style.backgroundColor = option.color;
 
     return buttonEl;
