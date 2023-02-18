@@ -42,3 +42,10 @@ const elements = createColorPickerOptions(colorPickerOptions);
 console.dir(elements);
 
 colorPickerContainerEl.append(...elements);
+
+colorPickerContainerEl.addEventListener('click', e => {
+  console.log(e.target.nodeName);
+  if (e.target.nodeName !== 'BUTTON') {
+    return;
+  } else colorPickerContainerEl.append(e.target.textContent, ' ');
+});
