@@ -1,6 +1,9 @@
 export default class PokeFetch {
-  constructor() {}
+  constructor() {
+    this.a = 1;
+    this.b = 6;
+  }
   foo() {
-    console.log('qwe');
+    console.log(`qwe ${this.a} ${this.b}`);
   }
 }
