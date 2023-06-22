@@ -1,11 +1,12 @@
-const title = document.createElement('h1');
+const title = document.createElement('h2');
 title.textContent = 'Page Title (came from JS)';
 console.log(title);
 
 // https://nastol.net/wallpaper/middle/107/gory-nebo-leto-priroda.jpg
 const imgEl = document.createElement('img');
-imgEl.src = 'https://cs6.pikabu.ru/video/2015/05/07/11/og_1431023092_834.jpg';
-//   'https://nastol.net/wallpaper/middle/107/gory-nebo-leto-priroda.jpg';
+// imgEl.src = 'https://cs6.pikabu.ru/video/2015/05/07/11/og_1431023092_834.jpg';
+imgEl.src =
+  'https://nastol.net/wallpaper/middle/107/gory-nebo-leto-priroda.jpg';
 console.log(imgEl);
 imgEl.width = 320;
 
